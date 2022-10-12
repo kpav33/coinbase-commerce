@@ -1,13 +1,15 @@
 import { useState } from "react";
-import Head from "next/head";
-import Image from "next/image";
+// import Head from "next/head";
+// import Image from "next/image";
 import axios from "axios";
 
 import { products } from "../data";
 
-import styles from "../styles/Home.module.css";
+// import styles from "../styles/Home.module.css";
 
 export default function Home() {
+  // https://dev.to/joshuajee/how-to-accept-crypto-payments-in-a-nextjs-application-using-coinbase-commerce-303e
+
   return (
     <div className={"container"}>
       {products.map((product, index) => {
