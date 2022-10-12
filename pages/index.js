@@ -44,7 +44,12 @@ const Products = ({ product }) => {
       <p>
         Price: {product.price} {product.currency}
       </p>
-      <button onClick={coinbase} disabled={loading}>
+      <button
+        onClick={coinbase}
+        // disabled={loading}
+        // Keep disabled because currently the Coinbase API is not connected with correct enviroment variables for security reasons
+        disabled={true}
+      >
         {" "}
         Pay With Crtpto{" "}
       </button>
