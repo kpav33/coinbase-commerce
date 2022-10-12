@@ -14,3 +14,23 @@ a {
 * {
   box-sizing: border-box;
 }
+
+body {
+  background-color: whitesmoke;
+}
+
+.container {
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+
+.container > div {
+  display: block;
+  margin: 0.8em;
+  padding: 4em;
+  border: 2px solid black;
+  flex-grow: 1;
+}
